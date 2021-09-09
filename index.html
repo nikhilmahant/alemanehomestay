@@ -30,7 +30,7 @@ https://templatemo.com/tm-520-highway
         .locationBtn{
             height:40px;
             width:150px;
-            background: #f5f5f5;
+           
              
         }
         .location{
@@ -39,6 +39,14 @@ https://templatemo.com/tm-520-highway
         .location:hover{
             transform:translateY(-5px);
              transition:all 0.2s ease-in;
+        }
+        .locate{
+            position: absolute;
+            left:40px;
+            bottom:35px;
+            z-index: 99999;
+            background: none;border:none;
+
         }
       
     </style>
@@ -274,12 +282,13 @@ https://templatemo.com/tm-520-highway
       <!-- Modal button -->
     <div class="popup-icon" style="display:flex;height:100px;width:300px;justify-content:center;align-items:center; position:none;">
       <!-- <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button> -->
-       <a target="_blank" href="https://goo.gl/maps/9QFBqn9a6ckpyzhPA"><button class="modal-btn">
-           <img class="location locate" src="https://www.pinclipart.com/picdir/big/363-3639653_location-pin-transparent-location-logo-png-vector-clipart.png" style="height:60px;width:auto;" alt="">
-       </button></a>
+     
        <a href="https://api.whatsapp.com/send?phone=+919731712357"> <button  class="modal-btn"><img class="location" src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" alt=""></button></a>
         
     </div>  
+      <a target="_blank" href="https://goo.gl/maps/9QFBqn9a6ckpyzhPA"><button class="modal-btn locate">
+           <img class="location " src="https://www.pinclipart.com/picdir/big/363-3639653_location-pin-transparent-location-logo-png-vector-clipart.png" style="height:60px;width:auto;" alt="">
+       </button></a>
 
     <!-- Modal -->
     <div id="modal" class="modal">
